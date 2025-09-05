@@ -1,9 +1,9 @@
-function Solve(val) 
+function demo4(val) 
 {
    var v = document.getElementById('res');
    v.value += val;
 }
-function Result() 
+function demo3() 
 {
    var num1 = document.getElementById('res').value;
    try 
@@ -16,12 +16,12 @@ function Result()
       document.getElementById('res').value = 'Error';
    }
 }
-function Clear() 
+function demo1() 
 {
    var inp = document.getElementById('res');
    inp.value = '';
 }
-function Back()
+function demo2()
  {
    var ev = document.getElementById('res');
    ev.value = ev.value.slice(0, -1);
@@ -32,19 +32,19 @@ document.addEventListener('keydown', function (event)
    const validKeys = '0123456789+-*/.%';
    if (validKeys.includes(key))
 	   {
-      Solve(key === '*' ? 'x' : key);
+      demo4(key === '*' ? 'x' : key);
    } 
    else if
    (key === 'Enter') 
    {
-      Result();
+     demo3();
    } 
    else if (key === 'Backspace')
 	   {
-      Back();
+      demo2();
    } 
    else if (key.toLowerCase() === 'c')
 	   {
-      Clear();
+      demo1();
    }
 });
