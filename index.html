@@ -1,52 +1,53 @@
 <html >
 <head>
-   <title>Cali</title>
-   <link rel="stylesheet" href="Style.css">
+   <title>Calculator</title>
+   <link rel="stylesheet" href="style.css">
+    <script src='Script.js'></script>
 </head>
-<body bgcolor="green">
+<body bgcolor="blue">
 <center>
-   
-         <table cellpadding="1">
+  
+         <table cellpadding="3">
             
 			<tr>
               <th  colspan="4" align="center"> <input type="text" id='res' class="B"></th>
             <tr>
 			
+            
 			<tr>
-              <td> <input type="button" class="A" value='cl' onclick="Clear()" id="clear"></td>
-			   <td> <input type="button" class="A"  value='on' ></td>
-              
-               <td> <input type="button" class="A" value='%' onclick="Solve('%')"></td>
-               <td> <input type="button" class="A" value='/' onclick="Solve('/')"></td>
+              <td> <input type="button" class="A" value='Cls' onclick="demo1()" id="clear"></td>
+              <td>  <input type="button" class="A" value='del' onclick="demo2()" id="backspace"></td>
+               <td> <input type="button" class="A" value='%' onclick="demo4('%')"></td>
+               <td> <input type="button" class="A" value='/' onclick="demo4('/')"></td>
                </tr>
 			   <tr>
-               <td> <input type="button" class="A" value='7' onclick="Solve('7')"></td>
-               <td> <input type="button" class="A" value='8' onclick="Solve('8')"></td>
-               <td> <input type="button" class="A" value='9' onclick="Solve('9')"></td>
-               <td> <input type="button" class="A" value='x' onclick="Solve('*')"></td>
+               <td> <input type="button" class="A" value='7' onclick="demo4('7')"></td>
+               <td> <input type="button" class="A" value='8' onclick="demo4('8')"></td>
+               <td> <input type="button" class="A" value='9' onclick="demo4('9')"></td>
+               <td> <input type="button" class="A" value='x' onclick="demo4('*')"></td>
                </tr>
 			   <tr>
-               <td> <input type="button" class="A" value='4' onclick="Solve('4')"></td>
-               <td> <input type="button" class="A" value='5' onclick="Solve('5')"></td>
-               <td> <input type="button" class="A" value='6' onclick="Solve('6')"></td>
-               <td> <input type="button"  class="A" value='-' onclick="Solve('-')"></td>
+               <td> <input type="button" class="A" value='4' onclick="demo4('4')"></td>
+               <td> <input type="button" class="A" value='5' onclick="demo4('5')"></td>
+               <td> <input type="button" class="A" value='6' onclick="demo4('6')"></td>
+               <td> <input type="button"  class="A" value='-' onclick="demo4('-')"></td>
 			   </tr>
                <tr>
-               <td> <input type="button" class="A" value='1' onclick="Solve('1')"></td>
-               <td> <input type="button" class="A" value='2' onclick="Solve('2')"></td>
-               <td> <input type="button" class="A" value='3' onclick="Solve('3')"></td>
-               <td> <input type="button" class="A" value='+' onclick="Solve('+')"></td>
+               <td> <input type="button" class="A" value='1' onclick="demo4('1')"></td>
+               <td> <input type="button" class="A" value='2' onclick="demo4('2')"></td>
+               <td> <input type="button" class="A" value='3' onclick="demo4('3')"></td>
+               <td> <input type="button" class="A" value='+' onclick="demo4('+')"></td>
               </tr>
 			  <tr>
-             <td>  <input type="button" class="A" value='D' onclick="Back()" id="backspace"></td>
-               <td> <input type="button" class="A" value='0' onclick="Solve('0')"></td>
-               <td> <input type="button" class="A" value='.' onclick="Solve('.')"></td>
-               <td> <input type="button" class="A" value='=' onclick="Result()"></td>
+               <td> <input type="button" class="A"  value='ON' ></td>
+               <td> <input type="button" class="A" value='0' onclick="demo4('0')"></td>
+               <td> <input type="button" class="A" value='.' onclick="demo4('.')"></td>
+               <td> <input type="button" class="A" value='=' onclick="demo3()"></td>
 			   </tr>
-           
+
         </table>
-      
+     
    </script>
-   <script src='Script.js'></script>
+  
 </body>
 </html>
