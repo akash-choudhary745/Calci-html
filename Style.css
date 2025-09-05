@@ -1,34 +1,29 @@
 
-body
-{
-backGround-image:url(s2.jpeg);
-}
 table
 {
 margin-top:100px;
 background-color:rgba(0,0,0,0.5);
-background:linear-gradient(yellow,blue,red white,cyan,blue);
 color:white;
-	
+box-shadow:15px 15px 15px white;		
 }
 .A
 {
-	background:linear-gradient(blue,white);
-	color:white;
-	
+	background:linear-gradient(blue,cyan,yellow);
+	color:black;
+	border-radius:60px 60px 60px 60px;
 	padding:20px;
 }
 .A:hover
 {
-	background:linear-gradient(blue,white);
+	background:linear-gradient(blue,cyan,yellow);
 	color:black;
 	border-radius:60px 60px 60px 60px;
 	padding:20px;
 }
 .B
 {
-	background:linear-gradient(white);
+	background:linear-gradient(blue,cyan,yellow);
 	color:black;
-	border-radius:20px 20px 20px 20px;
+	border-radius:100px 100px 100px 100px;
 	padding:40px;
 }
