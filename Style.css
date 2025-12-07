@@ -61,3 +61,19 @@ body {
     background: linear-gradient(to right, #4facfe, #00f2fe);
     font-weight: bold;
 }
+
+/* ON / OFF button colors */
+.power-on {
+    background: #00ff00;
+}
+
+.power-off {
+    background: #ff4d4d;
+}
+
+/* Disabled Button */
+.btn:disabled {
+    background: gray;
+    cursor: not-allowed;
+    transform: none !important;
+}
