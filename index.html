@@ -1,53 +1,43 @@
-<html >
+<!DOCTYPE html>
+<html lang="en">
 <head>
-   <title>Calculator</title>
-   <link rel="stylesheet" href="Style.css">
-    <script src='Script.js'></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Calculator</title>
+<link rel="stylesheet" href="style.css">
 </head>
-<body bgcolor="blue">
-<center>
-  
-         <table cellpadding="3">
-            
-			<tr>
-              <th  colspan="4" align="center"> <input type="text" id='res' class="B"></th>
-            <tr>
-			
-            
-			<tr>
-              <td> <input type="button" class="A" value='Cls' onclick="demo1()" id="clear"></td>
-              <td>  <input type="button" class="A" value='del' onclick="demo2()" id="backspace"></td>
-               <td> <input type="button" class="A" value='%' onclick="demo4('%')"></td>
-               <td> <input type="button" class="A" value='/' onclick="demo4('/')"></td>
-               </tr>
-			   <tr>
-               <td> <input type="button" class="A" value='7' onclick="demo4('7')"></td>
-               <td> <input type="button" class="A" value='8' onclick="demo4('8')"></td>
-               <td> <input type="button" class="A" value='9' onclick="demo4('9')"></td>
-               <td> <input type="button" class="A" value='x' onclick="demo4('*')"></td>
-               </tr>
-			   <tr>
-               <td> <input type="button" class="A" value='4' onclick="demo4('4')"></td>
-               <td> <input type="button" class="A" value='5' onclick="demo4('5')"></td>
-               <td> <input type="button" class="A" value='6' onclick="demo4('6')"></td>
-               <td> <input type="button"  class="A" value='-' onclick="demo4('-')"></td>
-			   </tr>
-               <tr>
-               <td> <input type="button" class="A" value='1' onclick="demo4('1')"></td>
-               <td> <input type="button" class="A" value='2' onclick="demo4('2')"></td>
-               <td> <input type="button" class="A" value='3' onclick="demo4('3')"></td>
-               <td> <input type="button" class="A" value='+' onclick="demo4('+')"></td>
-              </tr>
-			  <tr>
-               <td> <input type="button" class="A"  value='ON' ></td>
-               <td> <input type="button" class="A" value='0' onclick="demo4('0')"></td>
-               <td> <input type="button" class="A" value='.' onclick="demo4('.')"></td>
-               <td> <input type="button" class="A" value='=' onclick="demo3()"></td>
-			   </tr>
+<body>
 
-        </table>
-     
-   </script>
-  
+<div class="calculator">
+    <input type="text" id="res" readonly />
+
+    <div class="buttons">
+        <button class="btn" onclick="clearAll()">Cls</button>
+        <button class="btn" onclick="backspace()">Del</button>
+        <button class="btn" onclick="append('%')">%</button>
+        <button class="btn" onclick="append('/')">/</button>
+
+        <button class="btn" onclick="append('7')">7</button>
+        <button class="btn" onclick="append('8')">8</button>
+        <button class="btn" onclick="append('9')">9</button>
+        <button class="btn" onclick="append('*')">×</button>
+
+        <button class="btn" onclick="append('4')">4</button>
+        <button class="btn" onclick="append('5')">5</button>
+        <button class="btn" onclick="append('6')">6</button>
+        <button class="btn" onclick="append('-')">−</button>
+
+        <button class="btn" onclick="append('1')">1</button>
+        <button class="btn" onclick="append('2')">2</button>
+        <button class="btn" onclick="append('3')">3</button>
+        <button class="btn" onclick="append('+')">+</button>
+
+        <button class="btn" onclick="append('0')">0</button>
+        <button class="btn" onclick="append('.')">.</button>
+        <button class="btn equal" onclick="calculate()">=</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
