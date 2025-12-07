@@ -59,6 +59,7 @@ body {
 
 .equal {
     background: linear-gradient(to right, #4facfe, #00f2fe);
+    width:100%;
     font-weight: bold;
 }
 
