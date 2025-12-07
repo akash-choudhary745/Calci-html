@@ -59,8 +59,8 @@ body {
 
 .equal {
     background: linear-gradient(to right, #4facfe, #00f2fe);
-    grid-column: span 4;
     font-weight: bold;
+    grid-column: span 4;
 }
 
 /* ON / OFF button colors */
